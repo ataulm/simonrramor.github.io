@@ -1,0 +1,1 @@
+Adobe After Effects v14.1 Macintosh 64 render log for project “Segment.aep”Rendering started on 18/04/2017 at 17:39:15 BST  18/04/2017 17:39:15 BST: Starting composition “Comp 1”.  Output To: /Users/simonamor/Desktop/Comp 1_5.mov    18/04/2017 17:39:19 BST: Finished composition “Comp 1”.  Total Time Elapsed: 4 SecondsLog closed on 18/04/2017 at 17:39:19 BST
