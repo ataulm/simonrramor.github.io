@@ -1,56 +1,14 @@
-
-
-#container {
-  background: #111;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-#stats {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-
-.left {
-  width: 50%;
-  height: 100vh;
-  float: left;
-  padding: 50px;
-}
-
-.right {
-  background-color: yellow;
-  width: 50%;
-  height: 100vh;
-  float: right;
-}
-
-/*LANDING PAGE END*/
-
 /* TEXT STYLE START */
 
 h1 {
   font-size: 48px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #2D2C2C;
+  font-family: "halyard-display",sans-serif;
+  margin: 0 0 0 0;
 }
-
-.darkGrey{
-  color: #333;
-}
-
-.lightGrey{
-  color: #9ea0a6;
-}
-
 
 h2 {
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "halyard-display",sans-serif;
   font-weight: 400;
 }
 
@@ -58,7 +16,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "halyard-text",sans-serif;
 }
 
 a:visited {
@@ -71,4 +29,35 @@ a {
   text-decoration-style: wavy;
   -moz-text-decoration-color: rgb(234,76,137);
   text-decoration-color: rgb(234,76,137);
+}
+
+/* TEXT COLORS */
+
+#darkGrey{
+  color: #333;
+  font-weight: 700
+}
+
+#lightGrey{
+  color: #9ea0a6;
+  font-weight: 100
+}
+
+/* Logo */
+
+.logo_block{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.logo{
+  width: 72px;
+  height: 72px;
+  background-color: red;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  display: inline;
+
 }

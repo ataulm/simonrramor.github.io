@@ -1,20 +1,10 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2016, Codrops
- * http://www.codrops.com
- */
 ;(function(window) {
 
 	'use strict';
 
 	// Helper vars and functions.
 	function extend(a, b) {
-		for(var key in b) { 
+		for(var key in b) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -101,27 +91,27 @@
 		var val, origin, origin_2;
 
 		switch (direction) {
-			case 'lr' : 
+			case 'lr' :
 				val = 'scale3d(0,1,1)';
 				origin = '0 50%';
 				origin_2 = '100% 50%';
 				break;
-			case 'rl' : 
+			case 'rl' :
 				val = 'scale3d(0,1,1)';
 				origin = '100% 50%';
 				origin_2 = '0 50%';
 				break;
-			case 'tb' : 
+			case 'tb' :
 				val = 'scale3d(1,0,1)';
 				origin = '50% 0';
 				origin_2 = '50% 100%';
 				break;
-			case 'bt' : 
+			case 'bt' :
 				val = 'scale3d(1,0,1)';
 				origin = '50% 100%';
 				origin_2 = '50% 0';
 				break;
-			default : 
+			default :
 				val = 'scale3d(0,1,1)';
 				origin = '0 50%';
 				origin_2 = '100% 50%';
@@ -145,7 +135,7 @@
 			return false;
 		}
 		this.isAnimating = true;
-		
+
 		// Set the revealer element´s transform and transform origin.
 		var defaults = { // In case revealSettings is incomplete, its properties deafault to:
 				duration: 500,
@@ -161,10 +151,10 @@
 
 		this.revealer.style.WebkitTransform = this.revealer.style.transform =  transformSettings.val;
 		this.revealer.style.WebkitTransformOrigin = this.revealer.style.transformOrigin =  transformSettings.origin.initial;
-		
+
 		// Set the Revealer´s background color.
 		this.revealer.style.backgroundColor = revealSettings.bgcolor || defaults.bgcolor;
-		
+
 		// Show it. By default the revealer element has opacity = 0 (CSS).
 		this.revealer.style.opacity = 1;
 
@@ -183,11 +173,11 @@
 			animationSettings = {
 				delay: revealSettings.delay || defaults.delay,
 				complete: function() {
-					self.revealer.style.WebkitTransformOrigin = self.revealer.style.transformOrigin = transformSettings.origin.halfway;		
+					self.revealer.style.WebkitTransformOrigin = self.revealer.style.transformOrigin = transformSettings.origin.halfway;
 					if( typeof revealSettings.onCover === 'function' ) {
 						revealSettings.onCover(self.content, self.revealer);
 					}
-					anime(animationSettings_2);		
+					anime(animationSettings_2);
 				}
 			};
 
@@ -210,7 +200,7 @@
 		}
 		anime(animationSettings);
 	};
-	
+
 	window.RevealFx = RevealFx;
 
 })(window);
