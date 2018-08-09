@@ -1,10 +1,4 @@
-/*NEW STUFF FOR LP*/
 
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Quantico);
-html, body {
-  background: #fff;
-}
 
 #container {
   background: #111;
@@ -28,17 +22,57 @@ html, body {
 }
 
 .right {
-  /*background-color: red;*/
+  background-color: yellow;
   width: 50%;
   height: 100vh;
   float: right;
-  /*background-image: url(../Assets/homepage/potato_test.jpg);
-  background-size: cover;*/
+}
+
+/*LANDING PAGE END*/
+
+/* TEXT STYLE START */
+
+h1 {
+  font-size: 48px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.darkGrey{
+  color: #333;
+}
+
+.lightGrey{
+  color: #9ea0a6;
 }
 
 
+h2 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
 
+a:visited {
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  -moz-text-decoration-color: rgb(234,76,137); /* Code for Firefox */
+  text-decoration-color: rgb(234,76,137);
+}
+
+/* TEXT STYLE END */
 
 .mobile {
   padding: 50px;
@@ -102,36 +136,7 @@ text-align: center;
   display: none;
 }
 
-h1 {
-  font-size: 30px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-}
 
-h2 {
-  font-size: 30px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  font-family: 'Roboto Mono', monospace;
-}
-
-a:visited {
-  color: black;
-}
-
-a {
-  color: black;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  -moz-text-decoration-color: rgb(234,76,137); /* Code for Firefox */
-  text-decoration-color: rgb(234,76,137);
-}
 
 .splash-video {
   background-color:#F4F4F4;

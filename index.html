@@ -1,54 +1,84 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon Amor - Portfolio</title>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simon amor | Portfolio</title>
+		<meta name="description" content="Ideas for revealing content in a schematic box look." />
+		<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleNew.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-split loading">
+		<main>
+			<section class="content">
+				<div class="dual">
+					<div class="dual__inner" id="rev-1">
+						<div class="dual__half"></div>
+					</div>
+					<div class="dual__content">
+						<h1 class-"darkGrey"> Study hard what interests you the most in the most undisciplined, irreverent and original manner possible </h1>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			// Fake loading.
+			setTimeout(init, 1000);
 
-  <!-- css -->
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <!-- Jquery -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-  <!-- Title change -->
-  <script type="text/javascript" src="js/title-change.js"></script>
-  <!-- icons  -->
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-  <!-- java scrip for smooth scrolling  -->
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <!-- javascript for removing mobile -->
-  <script type="text/javascript" src="js/particle.js"></script>
-  <!-- javascript for removing mobile -->
-  <script type="text/javascript" src="js/remove-mobile.js"></script>
-</head>
+			function init() {
+				document.body.classList.remove('loading');
 
+				var splitContent = document.querySelector('.dual__content'),
+					rev1 = new RevealFx(document.querySelector('#rev-1'), {
+						revealSettings : {
+							bgcolor: '#FFFFFF',
+							direction: 'rl',
+							duration: 800,
+							easing: 'easeInOutCirc',
+							coverArea: 50,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+								splitContent.classList.add('dual__content--show');
+							}
+						}
+					});
 
-<body>
+				rev1.reveal();
 
-<div class="left">
-  <div class="title"><h1>
-    Hi.
-  </br>
-</br>
-I'm Simon Amor <i class="fa fa-handshake-o" aria-hidden="true"></i> A product designer currently working at
-<a href="https://p.ota.to/"> Potato.</a></h1>
-</div>
-</div>
+				var scrollElemToWatch = document.getElementById('rev-2'),
+					watcher = scrollMonitor.create(scrollElemToWatch, -300),
+					mediaToolbar = document.querySelector('.media__toolbar'),
+					rev2 = new RevealFx(scrollElemToWatch, {
+						revealSettings : {
+							bgcolor: '#FFFFFF',
+							duration: 800,
+							easing: 'easeInOutCirc',
+							coverArea: 12.5,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+								mediaToolbar.classList.add('media__toolbar--show');
+							}
+						}
+					});
 
-
-<div class="right">
-<div id="container"></div>
-</div>
-
-
-
-
-
-
-
-
-
-</body>
+				watcher.enterViewport(function() {
+					rev2.reveal();
+					watcher.destroy();
+				});
+			}
+		})();
+		</script>
+	</body>
 </html>
