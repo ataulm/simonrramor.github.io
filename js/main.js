@@ -203,4 +203,34 @@
 
 	window.RevealFx = RevealFx;
 
+	$("#logo_google").hover(function(){
+    $('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/googleImg.jpg)", "background-position: right");
+    }, function(){
+    $('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
+$("#logo_andriod").hover(function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/dacImg.jpg)", "background-position: right");
+	}, function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
+$("#logo_natwest").hover(function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/natwestImg.jpg)", "background-position: right");
+	}, function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
+$("#logo_qubit").hover(function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/qubitImg.jpg)", "background-position: right");
+	}, function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
+$("#logo_youtube").hover(function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/youtubeImg.jpg)", "background-position: right");
+	}, function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
 })(window);

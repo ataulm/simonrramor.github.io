@@ -15,6 +15,11 @@
 		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
     <link rel="stylesheet" type="text/css" href="css/styleNew.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bih8svy.css">
+		<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"></script>
+
 
 		<script>document.documentElement.className = 'js';</script>
 	</head>
@@ -31,7 +36,7 @@
             <h2 id="lightGrey"> I work on large scale product for some of the biggest companies in the world</h2>
             <div class="logo_block">
               <div class="logo" id="logo_google"></div>
-              <div id="google_type"><p>large scale product development for a range of google projects.</p></div>
+              <div id="google_type"><p>large scale product development for a range of google projects. From large scale reserach projects to finalised visual interaciton design. </p></div>
               <div class="logo" id="logo_aits"></div>
               <div id="aits_type"><p>Helping a medical research startup overcome significant technical barriers and get their product from prototype to market in rapid time.</p></div>
               <div class="logo" id="logo_andriod"></div>
@@ -43,16 +48,13 @@
               <div class="logo" id="logo_youtube"></div>
               <div id="youtube_type"><p>Creating smooth user exsperiance and driving uplift in event attendance.</p></div>
             </div>
-            <!-- <div class="company_info"> -->
-
-            <!-- </div> -->
 					</div>
 				</div>
 			</section>
 		</main>
 		<script src="js/anime.min.js"></script>
-		<script src="js/scrollMonitor.js"></script>
 		<script src="js/main.js"></script>
+
 		<script>
 		(function() {
 			// Fake loading.
@@ -77,22 +79,6 @@
 					});
 
 				rev1.reveal();
-
-				var scrollElemToWatch = document.getElementById('rev-2'),
-					watcher = scrollMonitor.create(scrollElemToWatch, -300),
-					mediaToolbar = document.querySelector('.media__toolbar'),
-					rev2 = new RevealFx(scrollElemToWatch, {
-						revealSettings : {
-							bgcolor: '#FFFFFF',
-							duration: 800,
-							easing: 'easeInOutCirc',
-							coverArea: 12.5,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-								mediaToolbar.classList.add('media__toolbar--show');
-							}
-						}
-					});
 
 				watcher.enterViewport(function() {
 					rev2.reveal();
