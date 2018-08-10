@@ -50,14 +50,160 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 32px;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .logo{
   width: 72px;
   height: 72px;
-  background-color: red;
   margin-right: 24px;
   margin-bottom: 24px;
   display: inline;
+  z-index: 1;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
 
+.logo:hover {
+  width: 74px;
+  height: 74px;
+  margin-left: -1px;
+  margin-top: 2px;
+  display: inline;
+  z-index: 1;
+  cursor: help;
+}
+
+
+/* LOGOS + type */
+
+#logo_google{
+  background-image:url(../Assets/homepage/google_logo.png);
+  background-size: cover;
+  z-index: 1;
+}
+
+#google_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+}
+
+#logo_google:hover + #google_type{
+  opacity: 1;
+  min-height: 70px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+
+}
+
+#logo_aits{
+  background-image:url(../Assets/homepage/AITS_logo.png);
+  background-size: cover;
+}
+
+#aits_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+}
+
+#logo_aits:hover + #aits_type{
+  opacity: 1;
+  min-height: 70px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#logo_andriod{
+  background-image:url(../Assets/homepage/android_logo.png);
+  background-size: cover;
+}
+
+#andriod_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+}
+
+#logo_andriod:hover + #andriod_type{
+  opacity: 1;
+  min-height: 70px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#logo_natwest{
+  background-image:url(../Assets/homepage/natwest_logo.png);
+  background-size: cover;
+}
+
+#natwest_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+}
+
+#logo_natwest:hover + #natwest_type{
+  opacity: 1;
+  min-height: 70px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#logo_qubit{
+  background-image:url(../Assets/homepage/qubit_logo.png);
+  background-size: cover;
+}
+
+#qubit_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+  min-height: 70px;
+}
+
+#logo_qubit:hover + #qubit_type{
+  opacity: 1;
+  min-height: 80px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#logo_youtube{
+  background-image:url(../Assets/homepage/youtube_logo.png);
+  background-size: cover;
+}
+
+#youtube_type{
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: -32px;
+
+}
+
+#logo_youtube:hover + #youtube_type{
+  opacity: 1;
+  min-height: 80px;
+  border-left: 2px solid #9ea0a6;
+  padding-left: 24px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
