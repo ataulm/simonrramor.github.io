@@ -209,6 +209,12 @@
     $('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
 });
 
+$("#logo_aits").hover(function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/aitsImg.jpg)", "background-position: right");
+	}, function(){
+	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/homePageImg.jpg)");
+});
+
 $("#logo_andriod").hover(function(){
 	$('.dual__half').css("background-image", "url(./Assets/homepage/background_photos/dacImg.jpg)", "background-position: right");
 	}, function(){
