@@ -1,19 +1,19 @@
 /* TEXT STYLE START */
 
 h1 {
-  font-size: 48px;
+  font-size: 24px;
   font-family: "halyard-display",sans-serif;
   margin: 0 0 0 0;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 14px;
   font-family: "halyard-display",sans-serif;
   font-weight: 400;
 }
 
 h3{
-  font-size: 24px;
+  font-size: 14px;
   font-family: "halyard-text",sans-serif;
 }
 
@@ -60,6 +60,11 @@ a:visited {
   font-weight: 100
 }
 
+/* Text block */
+
+.about_text{
+  width: 80%;
+}
 /* Logo */
 
 .logo_block{
@@ -70,13 +75,14 @@ a:visited {
   position: relative;
   padding-bottom: 50px;
   min-height: 220px;
+  width: 80%;
 }
 
 .logo{
-  width: 72px;
-  height: 72px;
-  margin-right: 24px;
-  margin-bottom: 24px;
+  width: 56px;
+  height: 56px;
+  margin-right: 8px;
+  margin-bottom: 8px;
   display: inline;
   z-index: 1;
   transition: 0.3s;
@@ -84,13 +90,12 @@ a:visited {
 }
 
 .logo:hover {
-  width: 74px;
-  height: 74px;
-  margin-left: -1px;
-  margin-top: 2px;
   display: inline;
   z-index: 1;
   cursor: help;
+  -webkit-box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
+  -moz-box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
+  box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
 }
 
 /* LOGOS + type */
@@ -211,3 +216,33 @@ a:visited {
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
+
+@media only screen and (max-width: 1400px) {
+
+    #darkGrey{
+      color: red;
+    }
+
+    #google_type{
+      bottom: 0px;
+    }
+
+    #aits_type{
+      bottom: 0px;
+    }
+
+    #andriod_type{
+      bottom: 0px;
+}
+
+    #natwest_type{
+      bottom: 0px;
+    }
+
+    #qubit_type{
+      bottom: 0px;
+    }
+
+    #youtube_type{
+      bottom: 0px;
+    }
