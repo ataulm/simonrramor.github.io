@@ -38,12 +38,13 @@ body {
 	z-index: 10000;
 	top: 50%;
 	left: 50%;
-	width: 50px;
-	height: 50px;
+	width: 32px;
+	height: 32px;
 	margin: -25px 0 0 -25px;
 	pointer-events: none;
 	background: #fff;
-	animation: loaderAnim 0.8s ease-out infinite alternate forwards;
+	border-radius: 32px;
+	animation: loaderAnim 0.5s ease-out infinite alternate forwards;
 }
 
 @keyframes loaderAnim {
