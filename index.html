@@ -34,23 +34,37 @@
 						<div class="about_text">
 							<h1 id="darkGrey"> Hi, I'm Simon Amor. </h1>
 	            <h1 id="lightGrey"> Product designer at Potato.</h1>
-	            <h2 id="lightGrey"> I work on large scale product for some of the biggest companies in the world.</h2>
+	            <p id="lightGrey"> I work on large scale product for some of the biggest companies in the world.</h2>
 						</div>
 
             <div class="logo_block">
-              <div class="logo" id="logo_google"></div>
-              <div id="google_type"><h3>Google</h3><p>End to end design for a range of large-scale google products. From research to finalised visual & interaction design. </p></div>
-              <div class="logo" id="logo_aits"></div>
-              <div id="aits_type"><h3>AITS (Artificial intelegent tracking systems)</h3><p>Helping a medical research startup overcome significant technical barriers and get their product from prototype to market in rapid time.</p></div>
-              <div class="logo" id="logo_andriod"></div>
-              <div id="andriod_type"><h3>Android</h3><p>Helping establish and iterate the visual language and information architecture for an online development hub for one of the world’s largest mobile operating systems.</p></div>
-              <div class="logo" id="logo_natwest"></div>
-                <div id="natwest_type"><h3>Natwest</h3><p>Educating and facilitating commercial banking users in banking sectary, resulting in market-leading fraud protection through improved Custer engagement and behaviour.</p></div>
-              <div class="logo" id="logo_qubit"></div>
-              <div id="qubit_type"><h3>Qubit</h3><p>Helping deliver personalised customer-centric experiences through leveraging big data. Solving problems including internal and external communication of highly technical concepts. </p></div>
-              <div class="logo" id="logo_youtube"></div>
-              <div id="youtube_type"><h3>Youtube</h3><p>Creating a smooth user exsperiance for large scale event sign up and driving an uplift in event attendance.</p></div>
+              <div class="logo" id="google" data-id="google"></div>
+
+              <div class="logo" id="aits"></div>
+
+              <div class="logo" id="andriod"></div>
+
+              <div class="logo" id="natwest"></div>
+
+              <div class="logo" id="qubit"></div>
+
+              <div class="logo" id="youtube"></div>
+
             </div>
+						<div class="copy">
+
+							<div id="aits_type" class="logo-copy"><h3>AITS (Artificial intelegent tracking systems)</h3><p>Helping a medical research startup overcome significant technical barriers and get their product from prototype to market in rapid time.</p></div>
+
+							<div id="google_type" class="logo-copy"><h3>Google</h3><p>End to end design for a range of large-scale google products. From research to finalised visual & interaction design. </p></div>
+
+							<div id="andriod_type" class="logo-copy"><h3>Android</h3><p>Helping establish and iterate the visual language and information architecture for an online development hub for one of the world’s largest mobile operating systems.</p></div>
+
+							<div id="qubit_type" class="logo-copy"><h3>Qubit</h3><p>Helping deliver personalised customer-centric experiences through leveraging big data. Solving problems including internal and external communication of highly technical concepts. </p></div>
+
+							<div id="natwest_type" class="logo-copy"><h3>Natwest</h3><p>Educating and facilitating commercial banking users in banking sectary, resulting in market-leading fraud protection through improved Custer engagement and behaviour.</p></div>
+
+							<div id="youtube_type" class="logo-copy"><h3>Youtube</h3><p>Creating a smooth user exsperiance for large scale event sign up and driving an uplift in event attendance.</p></div>
+						</div>
 						<div class="contact-links">
 							<a href="#">Contact me</a>
 							<a href="#">Portfolio on request</a>
@@ -66,7 +80,7 @@
 		<script>
 		(function() {
 			// Fake loading.
-			setTimeout(init, 2500);
+			setTimeout(init, 0);
 
 			function init() {
 				document.body.classList.remove('loading');
@@ -87,6 +101,20 @@
 					});
 
 				rev1.reveal();
+
+				var activeClass = "active"
+
+					$(".logo").hover(function(){
+						$('#'+this.id+"_type").addClass(activeClass);
+						console.log(this.id+"_type");
+					},function(){
+						$(".logo-copy").removeClass(activeClass)
+					});
+
+				// get .logos
+				// add event listener for hover
+				// addclass to logo text... so like..
+				// logo_google-text
 
 				watcher.enterViewport(function() {
 					rev2.reveal();

@@ -17,6 +17,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.opacity{
+	opacity: 1;
+}
+
 
 /* Page Loader */
 .js .loading::before {

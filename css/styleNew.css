@@ -1,19 +1,19 @@
 /* TEXT STYLE START */
 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   font-family: "halyard-display",sans-serif;
   margin: 0 0 0 0;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 24px;
   font-family: "halyard-display",sans-serif;
   font-weight: 400;
 }
 
 h3{
-  font-size: 14px;
+  font-size: 16px;
   font-family: "halyard-text",sans-serif;
 }
 
@@ -52,7 +52,7 @@ a:visited {
 
 #darkGrey{
   color: #333;
-  font-weight: 500
+  font-weight: 500;
 }
 
 #lightGrey{
@@ -73,145 +73,125 @@ a:visited {
   flex-wrap: wrap;
   margin-top: 32px;
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   min-height: 220px;
   width: 80%;
+  background-color: red;
+  align-items: flex-start
 }
 
 .logo{
-  width: 56px;
-  height: 56px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  width: 62px;
+  height: 62px;
+  margin-right: 16px;
+  margin-bottom: 16px;
   display: inline;
   z-index: 1;
   transition: 0.3s;
   transition-timing-function: ease-in-out;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 7px 18px -6px rgba(222,222,222,1);
+  -moz-box-shadow: 0px 7px 18px -6px rgba(222,222,222,1);
+  box-shadow: 0px 7px 18px -6px rgba(222,222,222,1);
 }
 
 .logo:hover {
   display: inline;
   z-index: 1;
   cursor: help;
-  -webkit-box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
-  -moz-box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
-  box-shadow: 0px 10px 33px 2px rgba(207,207,207,1);
+  -webkit-box-shadow: 0px 7px 18px -2px rgba(222,222,222,1);
+  -moz-box-shadow: 0px 7px 18px -2px rgba(222,222,222,1);
+  box-shadow: 0px 7px 18px -2px rgba(222,222,222,1);
 }
 
-/* LOGOS + type */
+.active{
+  opacity: 1!important;
+}
 
-#logo_google{
+/* LOGOS + TYPE */
+
+.logo-copy {
+  background-color: green;
+  color: #9ea0a6;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+#google{
   background-image:url(../Assets/homepage/google_logo.png);
   background-size: cover;
   z-index: 1;
 }
 
-#google_type{
-  color: #9ea0a6;
-  opacity: 0;
-  position: absolute;
-  bottom: -72px;
-}
 
-#logo_google:hover + #google_type{
-  opacity: 1;
+#google_type{
+
   min-height: 70px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-#logo_aits{
+#aits{
   background-image:url(../Assets/homepage/AITS_logo.png);
   background-size: cover;
 }
 
-#aits_type{
-  color: #9ea0a6;
-  opacity: 0;
-  position: absolute;
-  bottom: -72px;
-}
 
-#logo_aits:hover + #aits_type{
-  opacity: 1;
+#aits_type{
+
   min-height: 70px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-#logo_andriod{
+#andriod{
   background-image:url(../Assets/homepage/android_logo.png);
   background-size: cover;
 }
 
-#andriod_type{
-  color: #9ea0a6;
-  opacity: 0;
-  position: absolute;
-  bottom: -72px;
-}
 
-#logo_andriod:hover + #andriod_type{
-  opacity: 1;
+#andriod_type{
+
   min-height: 70px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-#logo_natwest{
+#natwest{
   background-image:url(../Assets/homepage/natwest_logo.png);
   background-size: cover;
 }
 
 #natwest_type{
-  color: #9ea0a6;
-  opacity: 0;
-  position: absolute;
-  bottom: -72px;
-}
 
-#logo_natwest:hover + #natwest_type{
-  opacity: 1;
   min-height: 70px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-#logo_qubit{
+#qubit{
   background-image:url(../Assets/homepage/qubit_logo.png);
   background-size: cover;
 }
 
 #qubit_type{
-  color: #9ea0a6;
-  opacity: 0;
-  position: absolute;
-  bottom: -72px;
-  min-height: 70px;
-}
-
-#logo_qubit:hover + #qubit_type{
-  opacity: 1;
   min-height: 80px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-#logo_youtube{
+.opacity{
+  opacity: 1;
+}
+
+#youtube{
   background-image:url(../Assets/homepage/youtube_logo.png);
   background-size: cover;
 }
 
 #youtube_type{
-  color: #9ea0a6;
   opacity: 0;
-  position: absolute;
-  bottom: -72px;
-
-}
-
-#logo_youtube:hover + #youtube_type{
-  opacity: 1;
   min-height: 80px;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
@@ -220,7 +200,7 @@ a:visited {
 @media only screen and (max-width: 1400px) {
 
     #darkGrey{
-      color: red;
+      /* color: red; */
     }
 
     #google_type{
