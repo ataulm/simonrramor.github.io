@@ -204,7 +204,7 @@ a:visited {
 @media only screen and (max-width: 1111px) {
 
   h1{
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -222,5 +222,12 @@ a:visited {
 .dual{
   background-color: white;
 }
+
+@media only screen and (max-width: 450px) {
+
+  .contact-links{
+    position: fixed;
+    top: 32px;
+  }
 
 }
