@@ -210,12 +210,12 @@ a:visited {
 @media only screen and (max-width: 575px) {
 
 .dual__half{
-  width: 100%;
-  background-image: none;
+  display: none;
 }
 
 .dual__content{
   width: 90%;
+  margin-left: 10%;
 
 }
 
