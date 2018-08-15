@@ -203,7 +203,27 @@ a:visited {
 
 @media only screen and (max-width: 1111px) {
 
-h1{
-  font-size: 24px;
+  h1{
+    font-size: 24px;
+  }
 }
+@media only screen and (max-width: 575px) {
+
+.dual__half{
+  width: 100%;
+}
+
+.dual__inner{
+  display: none;
+}
+
+.dual__content{
+  width: 90%;
+
+}
+
+.dual{
+  background-color: white;
+}
+
 }
