@@ -102,7 +102,7 @@ body {
 	justify-content: center;
 	padding: 20vh 2.5em;
 	font-size: 1.75em;
-	line-height: 1.4;
+	/* line-height: 1.4; */
 	color: #ffffff;
 	height: 90vh;
 }
